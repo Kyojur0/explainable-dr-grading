@@ -1,0 +1,56 @@
+{
+  "by_predicted_class": {
+    "0": {
+      "mean_disc_area": 0.009985893696695355,
+      "mean_disc_mass": 0.042631654894460635,
+      "mean_edge_area": 0.09754628640257999,
+      "mean_edge_mass": 0.07937074900572315,
+      "n": 768
+    },
+    "1": {
+      "mean_disc_area": 0.009973582116987397,
+      "mean_disc_mass": 0.033984993178956736,
+      "mean_edge_area": 0.09754628640258,
+      "mean_edge_mass": 0.05277182007323749,
+      "n": 156
+    },
+    "2": {
+      "mean_disc_area": 0.009946873367474924,
+      "mean_disc_mass": 0.02937603209286737,
+      "mean_edge_area": 0.09754628640257999,
+      "mean_edge_mass": 0.04268987729349151,
+      "n": 218
+    },
+    "3": {
+      "mean_disc_area": 0.010006920266869071,
+      "mean_disc_mass": 0.02934385340724185,
+      "mean_edge_area": 0.09754628640257999,
+      "mean_edge_mass": 0.0422077442555351,
+      "n": 58
+    },
+    "4": {
+      "mean_disc_area": 0.009979103836277384,
+      "mean_disc_mass": 0.017809254332033245,
+      "mean_edge_area": 0.09754628640258,
+      "mean_edge_mass": 0.028788067947389726,
+      "n": 68
+    }
+  },
+  "mean_disc_area": 0.009978268138617404,
+  "mean_disc_mass": 0.03734993508147191,
+  "mean_edge_area": 0.09754628640258,
+  "mean_edge_mass": 0.06537947177054032,
+  "median_disc_area": 0.010010102383774018,
+  "median_disc_mass": 0.03490323857384539,
+  "median_edge_area": 0.09754628640257999,
+  "median_edge_mass": 0.06052981962187258,
+  "n": 1268,
+  "share_disc_mass_above_2x_disc_area": {
+    "n_valid": 1268,
+    "share": 0.7381703470031545
+  },
+  "share_edge_mass_above_2x_edge_area": {
+    "n_valid": 1268,
+    "share": 0.0007886435331230284
+  }
+}

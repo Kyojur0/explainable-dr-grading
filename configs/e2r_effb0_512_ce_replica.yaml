@@ -1,0 +1,42 @@
+# Variant of configs/e2_effb0_512_ce.yaml (planned extras, DECISIONS.md D34).
+# Identical to the base except:
+#   run_name: e2_effb0_512_ce -> e2r_effb0_512_ce_replica
+#   (replicate: same settings, rerun on different hardware)
+run_name: e2r_effb0_512_ce_replica
+model:
+  id: M2
+  timm_name: efficientnet_b0
+  timm_pretrained_tag: efficientnet_b0.ra_in1k
+  input_size: 512
+  dropout: 0.2
+loss: ce
+label_smoothing: 0.0
+optimiser:
+  name: adamw
+  lr: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 1
+max_epochs: 20
+early_stopping_patience: 5
+batch_size: 16
+accumulation_steps: 1
+grad_clip_norm: 1.0
+selection_metric: qwk
+seed: 42
+num_workers: 2
+aug:
+  rotation_degrees: 180
+  hflip_p: 0.5
+  vflip_p: 0.5
+  scale_min: 0.85
+  scale_max: 1.0
+  ratio_min: 0.95
+  ratio_max: 1.05
+  brightness: 0.2
+  contrast: 0.2
+  gamma_min: 0.8
+  gamma_max: 1.2
+data:
+  split_file: splits/split_v1.csv

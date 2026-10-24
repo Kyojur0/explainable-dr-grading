@@ -1,0 +1,44 @@
+run:
+  run_name: e1_resnet18_384_wce
+  model:
+    id: M1
+    timm_name: resnet18
+    timm_pretrained_tag: resnet18.a1_in1k
+    input_size: 384
+    dropout: 0.2
+  loss: wce
+  label_smoothing: 0.0
+  optimiser:
+    name: adamw
+    lr: 0.0003
+    weight_decay: 0.0001
+  schedule:
+    name: cosine
+    warmup_epochs: 1
+  max_epochs: 20
+  early_stopping_patience: 5
+  batch_size: 16
+  accumulation_steps: 1
+  grad_clip_norm: 1.0
+  selection_metric: qwk
+  seed: 42
+  num_workers: 2
+  aug:
+    rotation_degrees: 180
+    hflip_p: 0.5
+    vflip_p: 0.5
+    scale_min: 0.85
+    scale_max: 1.0
+    ratio_min: 0.95
+    ratio_max: 1.05
+    brightness: 0.2
+    contrast: 0.2
+    gamma_min: 0.8
+    gamma_max: 1.2
+  data:
+    split_file: splits/split_v1.csv
+data:
+  processed_dir: /content/data/processed
+  image_dir: /content/data/processed/s512
+  target_size: 512
+  split_file: splits/split_v1.csv

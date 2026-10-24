@@ -1,0 +1,22 @@
+{
+  "best_epoch": 16,
+  "best_val": {
+    "accuracy": 0.8272870662460567,
+    "epoch": 16,
+    "macro_f1": 0.7296618636972609,
+    "qwk": 0.9184653249990489,
+    "val_loss": 0.552070272833767,
+    "weighted_f1": 0.8308378249321672
+  },
+  "epochs_run": 20,
+  "max_epochs": 20,
+  "pretrained": true,
+  "run_name": "e1_resnet18_384_wce",
+  "selection": {
+    "rule": "highest validation QWK; ties broken by higher validation macro-F1; early stopping on QWK",
+    "split": "val"
+  },
+  "smoke": false,
+  "stopped_early": false,
+  "total_seconds": 3409.466
+}

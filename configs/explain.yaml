@@ -1,0 +1,15 @@
+# Explainability configuration (scripts/explain.py, DECISIONS.md D40).
+# Every key is required; unknown or missing keys stop the script with an error.
+
+seed: 42                     # sampling of validation images and random deletion masks
+n_randomisation: 50          # validation images for the model randomisation test (12.3.1)
+n_deletion: 200              # validation images for the deletion test (12.3.2)
+deletion_fractions: [0.05, 0.10, 0.20, 0.40]   # shares of fundus pixels removed (12.3.2)
+deletion_blur_radius: 10.0   # PIL GaussianBlur radius in pixels at the processed size
+compare_size: 128            # maps are upsampled to this size before Spearman and SSIM
+overlay_alpha: 0.4           # heatmap opacity in the panels (12.2)
+colormap: jet                # matplotlib colormap name for the heatmap overlay
+edge_frac: 0.05              # outer share of the fundus radius counted as the edge band (12.3.3)
+disc_radius_frac: 0.10       # radius of the optic-disc proxy as a share of the fundus radius
+disc_smooth_frac: 0.05       # Gaussian sigma for locating the brightest region, share of the radius
+min_group: 5                 # smallest group for the lesion comparison (12.4)

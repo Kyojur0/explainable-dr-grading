@@ -1,0 +1,51 @@
+{
+  "fitted_on": "val",
+  "method": "temperature scaling: one scalar T dividing the logits; LBFGS over log T in float64, strong Wolfe line search, at most 100 iterations, starting at T = 1",
+  "n_bins": 15,
+  "n_val": 1268,
+  "notes": [
+    "calibrated files: probabilities are softmax(logits / T); logit columns are logits / T",
+    "pred_grade is unchanged by temperature scaling (checked)",
+    "the test file is reported only; T was fitted on validation logits"
+  ],
+  "run": "e3_effb0_512_wce",
+  "temperature": 1.5169915655923942,
+  "test": {
+    "after": {
+      "accuracy": 0.8220224719101124,
+      "brier": 0.2499924734785694,
+      "ece": 0.03037251282542332,
+      "nll": 0.45692096314092373
+    },
+    "before": {
+      "accuracy": 0.8220224719101124,
+      "brier": 0.26309003773140455,
+      "ece": 0.06693191225007561,
+      "nll": 0.511997237291983
+    },
+    "file": "runs/e3_effb0_512_wce/predictions/test.csv",
+    "n": 2225,
+    "sha256": "deb95efed856c6c8251ae66fce8916c3093718b5f429efc4f3edd9808f40a349",
+    "tta": false
+  },
+  "tta": false,
+  "val": {
+    "after": {
+      "accuracy": 0.8430599369085173,
+      "brier": 0.22424405656607924,
+      "ece": 0.022049185092020446,
+      "nll": 0.4078274520124571
+    },
+    "before": {
+      "accuracy": 0.8430599369085173,
+      "brier": 0.2302220500517508,
+      "ece": 0.05091350067540562,
+      "nll": 0.4406870107124529
+    },
+    "file": "runs/e3_effb0_512_wce/predictions/val.csv",
+    "n": 1268,
+    "sha256": "756bd7083971ac0f38d8a01488bf7595f100f44e468714c00bd6caf92ffe2571",
+    "tta": false
+  },
+  "written_utc": "2026-10-20T22:09:40+00:00"
+}

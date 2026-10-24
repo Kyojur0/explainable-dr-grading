@@ -1,0 +1,27 @@
+{
+  "checkpoint": {
+    "file": "best.pt",
+    "sha256": "da0abdfd233bc3aaa4403f464b5dacf62a695dc5fe50eb85d3e346b4ea6f15dd"
+  },
+  "closed_utc": "2026-10-20T22:01:37+00:00",
+  "command": "scripts/predict.py --run runs/e2_effb0_512_ce --subset test --final --batch-size 16 --num-workers 1 --max-seconds 45",
+  "created_utc": "2026-10-20T22:01:27+00:00",
+  "git": {
+    "commit": "b01284fbe748525b00ec6edb086330d411587252",
+    "dirty": true
+  },
+  "outputs": [
+    {
+      "command": "scripts/predict.py --run runs/e2_effb0_512_ce --subset test --final --batch-size 16 --num-workers 1 --max-seconds 45",
+      "csv_sha256": "1b1afb73e98310a3fd93d8e73aa32496f22dd6c16c0eb3815c2feed34df7ce28",
+      "file": "predictions/test.csv",
+      "rows": 2225,
+      "variant": "plain",
+      "written_utc": "2026-10-20T22:01:27+00:00"
+    }
+  ],
+  "reruns": [],
+  "run_name": "e2_effb0_512_ce",
+  "status": "closed",
+  "tta": false
+}

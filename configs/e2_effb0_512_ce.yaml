@@ -1,0 +1,40 @@
+# Run E2 (brief 8.6): EfficientNet-B0 at 512 px, plain cross-entropy.
+# Hyperparameters follow brief section 8.3. Schema read by src/drgrade/run_config.py.
+run_name: e2_effb0_512_ce
+model:
+  id: M2
+  timm_name: efficientnet_b0
+  timm_pretrained_tag: efficientnet_b0.ra_in1k   # exact timm tag, confirmed with timm 1.0.11 and recorded in config.yaml
+  input_size: 512
+  dropout: 0.2
+loss: ce                  # ce | wce (class weights (N / n_c) ** 0.5, training subset only)
+label_smoothing: 0.0
+optimiser:
+  name: adamw
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+schedule:
+  name: cosine
+  warmup_epochs: 1
+max_epochs: 20
+early_stopping_patience: 5
+batch_size: 16              # per step; 512 px runs may need a memory check
+accumulation_steps: 1       # raise to 2 for an effective batch of 32 if memory requires
+grad_clip_norm: 1.0
+selection_metric: qwk       # validation only; tie-break: macro_f1 (DECISIONS.md D16)
+seed: 42
+num_workers: 2
+aug:
+  rotation_degrees: 180       # uniform in [-180, 180], the full 360 degrees (brief 7)
+  hflip_p: 0.5
+  vflip_p: 0.5
+  scale_min: 0.85             # random resized crop, brief 7
+  scale_max: 1.0
+  ratio_min: 0.95
+  ratio_max: 1.05
+  brightness: 0.2             # colour jitter: brightness and contrast only, no hue or saturation
+  contrast: 0.2
+  gamma_min: 0.8              # random gamma, applied to every training image
+  gamma_max: 1.2
+data:
+  split_file: splits/split_v1.csv   # image and manifest paths come from configs/data.yaml (processed_dir/s<target_size>)

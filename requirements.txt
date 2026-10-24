@@ -1,0 +1,16 @@
+# Pinned exact versions. Stage 1 (audit) needs the first block only.
+# Versions chosen so that every package installs on Python 3.10 (the audit VM).
+numpy==2.2.6
+pandas==2.2.3
+Pillow==11.3.0
+PyYAML==6.0.2
+scikit-learn==1.7.2
+matplotlib==3.10.3
+pytest==8.3.5
+
+# Later stages (training, evaluation, explainability). Not used by stage 1.
+# Colab uses its preinstalled torch and does not reinstall it (notebooks/colab_train.ipynb);
+# env.json records the versions that actually ran.
+torch==2.5.1
+torchvision==0.20.1
+timm==1.0.11

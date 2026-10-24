@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "2e92f88ebc308118c81824b8973e576568e3ae4ac225ff6a6e82c9b3e553e056",
+  "command": "scripts/predict.py --run runs/e3_effb0_512_wce --subset test --final --batch-size 16 --num-workers 1 --max-seconds 45",
+  "csv_sha256": "deb95efed856c6c8251ae66fce8916c3093718b5f429efc4f3edd9808f40a349",
+  "device": "cpu",
+  "folder": "runs/e3_effb0_512_wce",
+  "rows": 2225,
+  "run_name": "e3_effb0_512_wce",
+  "subset": "test",
+  "tta": false,
+  "written_utc": "2026-10-20T22:08:27+00:00"
+}

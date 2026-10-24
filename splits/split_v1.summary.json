@@ -1,0 +1,41 @@
+{
+  "split_file": "split_v1.csv",
+  "method": "StratifiedKFold over near-duplicate groups of official train images, stratified by group grade",
+  "n_folds": 7,
+  "val_fold": 0,
+  "seed": 42,
+  "clusters_file": "dup_clusters.csv",
+  "counts": {
+    "test": 2225,
+    "train": 7625,
+    "val": 1268
+  },
+  "grade_share_pct": {
+    "test": {
+      "0": 59.461,
+      "1": 11.64,
+      "2": 18.382,
+      "3": 4.494,
+      "4": 6.022
+    },
+    "train": {
+      "0": 59.095,
+      "1": 11.738,
+      "2": 17.416,
+      "3": 5.666,
+      "4": 6.085
+    },
+    "val": {
+      "0": 59.148,
+      "1": 11.672,
+      "2": 17.508,
+      "3": 5.599,
+      "4": 6.073
+    }
+  },
+  "max_train_val_gap_pp": 0.091,
+  "git": {
+    "commit": "2f6da6038a409028a3b8e2594bc7be353d64473a",
+    "dirty": true
+  }
+}

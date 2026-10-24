@@ -1,0 +1,29 @@
+# Dataset, processed data and run outputs (never committed)
+data/
+runs/*
+outputs/
+*.pt
+*.zip
+# Python and tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+# OS and editor
+.DS_Store
+.ipynb_checkpoints/
+logs/
+
+# Trained models published for reproduction (DECISIONS.md D42)
+!models/
+!models/*/best.pt
+models/*/predictions/
+models/*/TEST_LOCK.json
+models/*/calibration/
+models/*/referral/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out

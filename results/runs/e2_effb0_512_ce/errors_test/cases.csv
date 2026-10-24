@@ -1,0 +1,31 @@
+reason,image_id,true_grade,pred_grade,confidence,lesions_present
+most_confident_error,ts001962,1,0,0.999999999357275,MA
+most_confident_error,ts000394,2,0,0.9999996342984688,"MA, IRH"
+most_confident_error,ts000107,3,4,0.999999444549894,"MA, HE, IRH, VB/IRMA"
+most_confident_error,ts002132,1,0,0.9999867638204958,"MA, HE"
+most_confident_error,ts001947,2,0,0.9998130878437864,"MA, HE, IRH"
+most_confident_error,ts000306,1,0,0.9992842790304786,"MA, HE"
+referable_miss,ts000394,2,0,0.9999996342984688,"MA, IRH"
+referable_miss,ts001947,2,0,0.9998130878437864,"MA, HE, IRH"
+referable_miss,ts000553,2,0,0.9992141436118117,"MA, IRH"
+referable_miss,ts000079,2,0,0.9987234405494385,"MA, IRH"
+referable_miss,ts000729,2,0,0.9986318919223143,"MA, IRH"
+referable_miss,ts001606,2,1,0.9980620384010008,"MA, IRH"
+adjacent_error,ts001962,1,0,0.999999999357275,MA
+adjacent_error,ts000107,3,4,0.999999444549894,"MA, HE, IRH, VB/IRMA"
+adjacent_error,ts002132,1,0,0.9999867638204958,"MA, HE"
+adjacent_error,ts000306,1,0,0.9992842790304786,"MA, HE"
+error_two_or_more_grades,ts000394,2,0,0.9999996342984688,"MA, IRH"
+error_two_or_more_grades,ts001947,2,0,0.9998130878437864,"MA, HE, IRH"
+error_two_or_more_grades,ts000553,2,0,0.9992141436118117,"MA, IRH"
+error_two_or_more_grades,ts000079,2,0,0.9987234405494385,"MA, IRH"
+correct_grade_0,ts001873,0,0,0.9999999999999998,
+correct_grade_0,ts002163,0,0,0.9999999999999998,
+correct_grade_1,ts000992,1,1,0.9999244942996599,MA
+correct_grade_1,ts000687,1,1,0.9997078530509619,MA
+correct_grade_2,ts001450,2,2,0.9999951994738026,"MA, IRH"
+correct_grade_2,ts001734,2,2,0.999974723654866,"MA, IRH"
+correct_grade_3,ts000098,3,3,0.9999055654137652,"MA, HE, IRH"
+correct_grade_3,ts001030,3,3,0.9998089175021707,"MA, HE, IRH"
+correct_grade_4,ts001331,4,4,0.9999999999936307,"MA, IRH, VB/IRMA, NV, VH"
+correct_grade_4,ts000835,4,4,0.9999999999606886,"MA, HE, NV, VH"

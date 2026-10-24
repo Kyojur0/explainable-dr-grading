@@ -1,0 +1,313 @@
+{
+  "generated_utc": "2026-10-20T11:57:57+00:00",
+  "git": {
+    "commit": "944fdf81715d8ca1e6df344401e16e99f6a87283",
+    "dirty": false
+  },
+  "config": {
+    "crop_threshold": 10,
+    "crop_margin_frac": 0.02,
+    "crop_min_area_frac": 0.3,
+    "bg_detect_min": 8,
+    "bg_tolerance": 10,
+    "bg_corner_spread": 12,
+    "target_size": 512,
+    "circle_mask": true,
+    "jpeg_quality": 95,
+    "processed_dir": "data/processed",
+    "ben_graham": false,
+    "ben_graham_sigma": 10.0,
+    "vsig_decode_scale": 4,
+    "vsig_canvas": 256,
+    "vsig_blur_radius": 6.0,
+    "vsig_ring_frac": 0.9,
+    "vsig_grid": 64,
+    "vsig_threshold": 0.93,
+    "audit_out": "outputs/audit",
+    "seed": 42
+  },
+  "run": {
+    "workers": 4,
+    "limit": null,
+    "partial_run": false,
+    "reuse_cache": false,
+    "resumed": true,
+    "vessel_signature_cache_reused": false,
+    "n_csv_rows": 11118,
+    "n_rows_audited": 11118
+  },
+  "counts": {
+    "per_split_total": {
+      "train": 8893,
+      "test": 2225
+    },
+    "per_split_grade": {
+      "train": {
+        "0": 5256,
+        "1": 1043,
+        "2": 1550,
+        "3": 503,
+        "4": 541
+      },
+      "test": {
+        "0": 1323,
+        "1": 259,
+        "2": 409,
+        "3": 100,
+        "4": 134
+      }
+    },
+    "laterality_by_split": {
+      "train": {
+        "left": 4526,
+        "right": 4367
+      },
+      "test": {
+        "left": 1081,
+        "right": 1144
+      }
+    },
+    "train_grade_counts": {
+      "0": 5256,
+      "1": 1043,
+      "2": 1550,
+      "3": 503,
+      "4": 541
+    },
+    "imbalance_ratio_train": 10.449304174950298
+  },
+  "image_properties": {
+    "n_readable": 11118,
+    "n_unreadable": 0,
+    "unreadable_ids": [],
+    "distinct_resolutions": 1857,
+    "top_resolutions": [
+      {
+        "width": 1659,
+        "height": 1659,
+        "n_images": 481
+      },
+      {
+        "width": 1657,
+        "height": 1657,
+        "n_images": 452
+      },
+      {
+        "width": 1571,
+        "height": 1570,
+        "n_images": 375
+      },
+      {
+        "width": 1569,
+        "height": 1568,
+        "n_images": 365
+      },
+      {
+        "width": 1602,
+        "height": 1602,
+        "n_images": 294
+      },
+      {
+        "width": 1713,
+        "height": 1713,
+        "n_images": 270
+      },
+      {
+        "width": 1380,
+        "height": 1382,
+        "n_images": 261
+      },
+      {
+        "width": 1655,
+        "height": 1655,
+        "n_images": 261
+      },
+      {
+        "width": 1571,
+        "height": 1569,
+        "n_images": 233
+      },
+      {
+        "width": 2354,
+        "height": 2354,
+        "n_images": 213
+      }
+    ],
+    "width": {
+      "min": 660.0,
+      "median": 1659.0,
+      "max": 3353.0
+    },
+    "height": {
+      "min": 660.0,
+      "median": 1659.0,
+      "max": 3368.0
+    },
+    "file_bytes": {
+      "min": 67247.0,
+      "median": 567627.0,
+      "max": 2741808.0
+    }
+  },
+  "labels": {
+    "note": "Lesion labels are image-level presence flags with no location. A flag may reflect incomplete lesion annotation rather than a wrong grade. Flags are informational only.",
+    "flag_counts": {
+      "train": {
+        "F1_grade0_with_lesion": 0,
+        "F2_grade1_beyond_ma": 421,
+        "F3_pdr_signs_below_4": 0,
+        "F4_grade4_without_pdr_signs": 1,
+        "F5_grade_ge1_no_lesion": 0
+      },
+      "test": {
+        "F1_grade0_with_lesion": 0,
+        "F2_grade1_beyond_ma": 116,
+        "F3_pdr_signs_below_4": 0,
+        "F4_grade4_without_pdr_signs": 0,
+        "F5_grade_ge1_no_lesion": 0
+      }
+    }
+  },
+  "duplicates": {
+    "exact": {
+      "n_groups": 97,
+      "n_images": 197,
+      "n_cross_split_groups": 34,
+      "n_groups_with_mixed_grades": 0
+    },
+    "near": {
+      "threshold": 0.93,
+      "n_images_compared": 11118,
+      "n_pairs": 169,
+      "n_exact_pairs": 104,
+      "pairs_by_type": {
+        "within_train": {
+          "pairs": 104,
+          "grade_match": 101,
+          "exact": 64
+        },
+        "within_test": {
+          "pairs": 6,
+          "grade_match": 6,
+          "exact": 4
+        },
+        "cross_split": {
+          "pairs": 59,
+          "grade_match": 57,
+          "exact": 36
+        }
+      },
+      "similarity_histogram": {
+        "0.93 to 0.95": 4,
+        "0.95 to 0.97": 5,
+        "0.97 to 0.99": 20,
+        "0.99 to 1.0001": 140
+      },
+      "pair_grade_difference_counts": {
+        "0": 164,
+        "1": 4,
+        "2": 0,
+        "3": 0,
+        "4": 1
+      },
+      "n_groups": 148,
+      "group_size_counts": {
+        "2": 142,
+        "3": 3,
+        "4": 3
+      },
+      "n_groups_spanning_splits": 50,
+      "test_images_in_groups_with_train": 51,
+      "n_groups_with_grade_disagreement": 5,
+      "grade_disagreement_groups": [
+        {
+          "cluster_id": 12,
+          "image_ids": [
+            "tr000783",
+            "tr006214"
+          ],
+          "splits": [
+            "train",
+            "train"
+          ],
+          "grades": [
+            1,
+            0
+          ]
+        },
+        {
+          "cluster_id": 74,
+          "image_ids": [
+            "tr003195",
+            "ts002028"
+          ],
+          "splits": [
+            "train",
+            "test"
+          ],
+          "grades": [
+            1,
+            2
+          ]
+        },
+        {
+          "cluster_id": 78,
+          "image_ids": [
+            "tr003315",
+            "tr004154"
+          ],
+          "splits": [
+            "train",
+            "train"
+          ],
+          "grades": [
+            1,
+            2
+          ]
+        },
+        {
+          "cluster_id": 89,
+          "image_ids": [
+            "tr004076",
+            "tr007760"
+          ],
+          "splits": [
+            "train",
+            "train"
+          ],
+          "grades": [
+            0,
+            1
+          ]
+        },
+        {
+          "cluster_id": 99,
+          "image_ids": [
+            "tr004850",
+            "ts001140"
+          ],
+          "splits": [
+            "train",
+            "test"
+          ],
+          "grades": [
+            4,
+            0
+          ]
+        }
+      ],
+      "nearest_neighbour_similarity": {
+        "0.01": 0.1589847269654274,
+        "0.1": 0.24148526191711425,
+        "0.5": 0.3604619801044464,
+        "0.9": 0.5963289082050334,
+        "0.99": 0.9999998211860657
+      },
+      "contact_sheet_panels": {
+        "cross_split": 12,
+        "threshold_boundary": 12,
+        "grade_disagreement": 5
+      }
+    }
+  }
+}

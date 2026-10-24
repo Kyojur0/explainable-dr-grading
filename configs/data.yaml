@@ -1,0 +1,34 @@
+# Data audit and preprocessing configuration (brief sections 3, 5, 6.1).
+# Relative paths are resolved from the working directory (the repository root).
+
+# Dataset root that contains MMRDR-CFP/. If null, the MMRDR_ROOT environment
+# variable is used. Never commit an absolute path here.
+mmrdr_root: null
+
+# Black-border crop (brief 6.1). Greyscale threshold on 0 to 255.
+crop_threshold: 10
+crop_margin_frac: 0.02      # margin as a fraction of the longer crop side
+crop_min_area_frac: 0.30    # below this share of the image, keep the full image
+bg_detect_min: 8            # corner level at or above this means a non-black camera background (D13)
+bg_tolerance: 10            # background pixels within this of the corner level are set to black (D13)
+bg_corner_spread: 12        # only when the four corner levels agree within this (D13)
+
+# Preprocessing for training inputs (brief 6.1, DECISIONS.md D09 to D11).
+target_size: 512            # square side in pixels; outputs go to <processed_dir>/s<target_size>/
+circle_mask: true           # black out corners outside the inscribed circle after resizing (D13)
+jpeg_quality: 95            # quality of the saved processed JPEGs
+processed_dir: data/processed   # relative to the working directory; git-ignored
+ben_graham: false           # Ben Graham colour normalisation; ablation only (DECISIONS.md D11)
+ben_graham_sigma: 10        # Gaussian sigma in pixels, used only when ben_graham is true
+
+# Vessel-pattern signature for near-duplicate detection (brief 5.4, DECISIONS.md D03).
+vsig_decode_scale: 4        # JPEG draft decoding at 1/4 size (speed); 1, 2, 4 or 8
+vsig_canvas: 256            # square canvas the cropped fundus is resized to
+vsig_blur_radius: 6         # Gaussian blur radius for the high-pass (green minus blur)
+vsig_ring_frac: 0.9         # keep only the central share of the canvas radius (drops the rim)
+vsig_grid: 64               # high-pass map is box-downsampled to grid x grid, then flattened
+vsig_threshold: 0.93        # cosine similarity at or above which a pair is reported
+
+# Outputs and reproducibility
+audit_out: outputs/audit
+seed: 42

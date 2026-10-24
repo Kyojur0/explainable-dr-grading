@@ -1,0 +1,13 @@
+subset,reason,image_id,true_grade,pred_grade,reviewer_note
+test,referable_miss,ts000394,2,0,"Observation (not validation): predicted-class map hottest over the dark foveal region; true-grade map hottest at the same place, plus a smaller inferior spot."
+test,referable_miss,ts001947,2,0,"Observation: predicted-class map on the fovea and the optic disc; true-grade map on two spots temporal and inferior to the fovea, not on the disc."
+test,referable_miss,ts000553,2,0,"Observation: predicted-class map on the fovea and the optic disc; true-grade map weak everywhere, highest at the disc edge. Field cut flat at top and bottom."
+test,referable_miss,ts000079,2,0,"Observation: predicted-class map hottest just temporal to the disc side of the fovea, over a pale spot; true-grade map on several spots above, at and below the macula."
+test,referable_miss,ts000729,2,0,"Observation: predicted-class map on the fovea and the optic disc; true-grade map on the optic disc."
+test,referable_miss,ts001606,2,1,"Observation: predicted-class map on a temporal peripheral spot and the optic disc; true-grade map on two spots near the macula."
+val,referable_miss,tr003956,3,1,"Observation: both maps hottest at the same superotemporal mid-peripheral region; the large dark shadow (artefact) is not highlighted."
+val,referable_miss,tr003122,2,1,"Observation: predicted-class map near the superior arcade; true-grade map hottest on the optic disc with smaller inferior spots."
+val,referable_miss,tr005326,2,0,"Observation: predicted-class map on the fovea and the optic disc; true-grade map on the optic disc."
+val,referable_miss,tr006105,2,0,"Observation: predicted-class map along a vertical band beside the disc and a small spot at the fovea; true-grade map on the disc and a superior spot."
+val,referable_miss,tr000310,2,0,"Observation: predicted-class map on the fovea, disc moderate; true-grade map on an inferotemporal peripheral spot."
+val,referable_miss,tr003483,2,1,"Observation: predicted-class map on the optic disc and spots above and below the macula; true-grade map on a superior spot and smaller spots near the macula."

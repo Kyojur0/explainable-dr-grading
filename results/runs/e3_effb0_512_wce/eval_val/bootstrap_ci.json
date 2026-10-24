@@ -1,0 +1,96 @@
+{
+  "headline": {
+    "accuracy": {
+      "high": 0.8627957413249211,
+      "low": 0.8225552050473186,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.8430599369085173,
+      "seed": 42
+    },
+    "macro_f1": {
+      "high": 0.7867474994620567,
+      "low": 0.7243971882822305,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.7577922848748516,
+      "seed": 42
+    },
+    "qwk": {
+      "high": 0.9377978124283824,
+      "low": 0.9077940145584106,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.924272178012006,
+      "seed": 42
+    },
+    "referable_miss_rate": {
+      "high": 0.10962654109828122,
+      "low": 0.05397676934919321,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.08108108108108109,
+      "seed": 42
+    },
+    "referable_sensitivity": {
+      "high": 0.9460232306508068,
+      "low": 0.8903734589017188,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.918918918918919,
+      "seed": 42
+    }
+  },
+  "m0_majority_baseline": {
+    "accuracy": {
+      "high": 0.6190851735015773,
+      "low": 0.5638801261829653,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.5914826498422713,
+      "seed": 42
+    },
+    "macro_f1": {
+      "high": 0.15294690696541646,
+      "low": 0.14422592032274334,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.14866204162537167,
+      "seed": 42
+    },
+    "qwk": {
+      "high": 0.0,
+      "low": 0.0,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.0,
+      "seed": 42
+    },
+    "referable_miss_rate": {
+      "high": 1.0,
+      "low": 1.0,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 1.0,
+      "seed": 42
+    },
+    "referable_sensitivity": {
+      "high": 0.0,
+      "low": 0.0,
+      "method": "percentile, 95%",
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "point": 0.0,
+      "seed": 42
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "best_epoch": 19,
+  "best_val": {
+    "accuracy": 0.8525236593059937,
+    "epoch": 19,
+    "macro_f1": 0.7538761380052049,
+    "qwk": 0.9291468077837931,
+    "val_loss": 0.5202522521841484,
+    "weighted_f1": 0.8512250735903121
+  },
+  "epochs_run": 20,
+  "max_epochs": 20,
+  "pretrained": true,
+  "run_name": "e2_effb0_512_ce",
+  "selection": {
+    "rule": "highest validation QWK; ties broken by higher validation macro-F1; early stopping on QWK",
+    "split": "val"
+  },
+  "smoke": false,
+  "stopped_early": false,
+  "total_seconds": 5083.087
+}

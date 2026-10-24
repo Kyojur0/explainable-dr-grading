@@ -1,0 +1,13 @@
+{
+  "backfilled": true,
+  "checkpoint_sha256": "2e92f88ebc308118c81824b8973e576568e3ae4ac225ff6a6e82c9b3e553e056",
+  "csv_sha256": "756bd7083971ac0f38d8a01488bf7595f100f44e468714c00bd6caf92ffe2571",
+  "device": "cpu",
+  "folder": "runs/e3_effb0_512_wce",
+  "note": "sidecar written after the file, from best.pt as it is now (DECISIONS.md D38)",
+  "rows": 1268,
+  "run_name": "e3_effb0_512_wce",
+  "subset": "val",
+  "tta": false,
+  "written_utc": "2026-10-20T21:52:50+00:00"
+}

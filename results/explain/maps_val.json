@@ -1,0 +1,16 @@
+{
+  "checkpoint_sha256": "da0abdfd233bc3aaa4403f464b5dacf62a695dc5fe50eb85d3e346b4ea6f15dd",
+  "command": "scripts/explain.py maps --run runs/e2_effb0_512_ce --subset val --max-seconds 160",
+  "logit_tolerance": 0.001,
+  "map_shape": [
+    16,
+    16
+  ],
+  "max_abs_logit_difference": 0.0,
+  "n": 1268,
+  "predictions_file": "runs/e2_effb0_512_ce/predictions/val.csv",
+  "run_name": "e2_effb0_512_ce",
+  "subset": "val",
+  "target_layer": "bn2",
+  "time_utc": "2026-10-21T10:52:47+00:00"
+}

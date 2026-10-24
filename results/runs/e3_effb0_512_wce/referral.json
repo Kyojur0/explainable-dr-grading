@@ -1,0 +1,107 @@
+{
+  "pre_declared_rules": {
+    "decided_before_any_test_prediction": "2026-10-20 (DECISIONS.md D30)",
+    "primary": 0.2,
+    "secondary_target_miss_rate": 0.05
+  },
+  "primary": {
+    "nominal_fraction": 0.2,
+    "rule": "refer the most uncertain 20% of cases (score = calibrated max probability)",
+    "test": {
+      "n": 2225,
+      "n_referred": 482,
+      "referable_misses_referred": 50,
+      "referable_misses_total": 87,
+      "referral_fraction": 0.21662921348314607,
+      "retained": {
+        "accuracy": 0.8955823293172691,
+        "n": 1743,
+        "qwk": 0.9489653678284012,
+        "referable_miss_rate": 0.09068627450980392
+      },
+      "share_of_misses_referred": 0.5747126436781609,
+      "threshold": 0.6307004289373196
+    },
+    "threshold": 0.6307004289373196,
+    "validation": {
+      "n": 1268,
+      "n_referred": 254,
+      "referable_misses_referred": 17,
+      "referable_misses_total": 30,
+      "referral_fraction": 0.20031545741324921,
+      "retained": {
+        "accuracy": 0.9151873767258383,
+        "n": 1014,
+        "qwk": 0.9618713337820944,
+        "referable_miss_rate": 0.051587301587301584
+      },
+      "share_of_misses_referred": 0.5666666666666667,
+      "threshold": 0.6307004289373196
+    }
+  },
+  "referable_threshold_file": "referable_threshold.json",
+  "risk_coverage_files": {
+    "test": "risk_coverage_test.csv",
+    "validation": "risk_coverage_val.csv"
+  },
+  "run": "e3_effb0_512_wce",
+  "secondary": {
+    "nominal_fraction": 0.21,
+    "reached": true,
+    "rule": "lowest nominal fraction, in steps of 1%, at which the retained referable miss rate on validation is at most 5%; if none up to 50%, not reached",
+    "target_retained_referable_miss_rate": 0.05,
+    "test": {
+      "n": 2225,
+      "n_referred": 502,
+      "referable_misses_referred": 51,
+      "referable_misses_total": 87,
+      "referral_fraction": 0.22561797752808987,
+      "retained": {
+        "accuracy": 0.8990133488102148,
+        "n": 1723,
+        "qwk": 0.9503789515106947,
+        "referable_miss_rate": 0.08977556109725686
+      },
+      "share_of_misses_referred": 0.5862068965517241,
+      "threshold": 0.6406621879232798
+    },
+    "threshold": 0.6406621879232798,
+    "validation": {
+      "n": 1268,
+      "n_referred": 266,
+      "referable_misses_referred": 19,
+      "referable_misses_total": 30,
+      "referral_fraction": 0.20977917981072555,
+      "retained": {
+        "accuracy": 0.9191616766467066,
+        "n": 1002,
+        "qwk": 0.9631612785236607,
+        "referable_miss_rate": 0.044897959183673466
+      },
+      "share_of_misses_referred": 0.6333333333333333,
+      "threshold": 0.6406621879232798
+    }
+  },
+  "temperature": 1.5169915655923942,
+  "test_curve_note": "risk_coverage_test.csv is descriptive; test decisions use the fixed thresholds only",
+  "test_file": "runs/e3_effb0_512_wce/predictions/test.csv",
+  "test_sha256": "deb95efed856c6c8251ae66fce8916c3093718b5f429efc4f3edd9808f40a349",
+  "tta": false,
+  "uncertainty_validation": {
+    "auroc_incorrect": {
+      "confidence": 0.8584315403020717,
+      "entropy": 0.8528423219935034
+    },
+    "auroc_referable_miss": {
+      "confidence": 0.8341410877759828,
+      "entropy": 0.8407915993537964
+    },
+    "better_for_errors": "confidence",
+    "n": 1268,
+    "n_incorrect": 199,
+    "n_referable_miss": 30
+  },
+  "validation_file": "runs/e3_effb0_512_wce/predictions/val.csv",
+  "validation_sha256": "756bd7083971ac0f38d8a01488bf7595f100f44e468714c00bd6caf92ffe2571",
+  "written_utc": "2026-10-20T22:09:50+00:00"
+}

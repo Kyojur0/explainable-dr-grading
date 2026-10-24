@@ -1,0 +1,6 @@
+# Runs that may ever be predicted on the test set (DECISIONS.md D35, D38).
+# E2 is the selected model; E3 is the declared secondary model. Nothing else.
+# Checked by src/drgrade/provenance.py before any test image is loaded.
+allowed_runs:
+  - e2_effb0_512_ce
+  - e3_effb0_512_wce

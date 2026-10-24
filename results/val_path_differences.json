@@ -1,0 +1,65 @@
+{
+  "runs": {
+    "e2_effb0_512_ce": {
+      "cpu_predict": {
+        "accuracy": 0.8533123028391167,
+        "macro_f1": 0.7553664902832884,
+        "qwk": 0.9293536748020114,
+        "referable_auroc": 0.9810208872569673,
+        "referable_sensitivity": 0.8432432432432433
+      },
+      "differing_images": [
+        {
+          "cpu": 2,
+          "gpu": 3,
+          "image_id": "tr008382",
+          "true": 2
+        }
+      ],
+      "max_abs_prob_difference": 0.05093829263016958,
+      "n": 1268,
+      "pred_grade_differs": 1,
+      "training_time_gpu": {
+        "accuracy": 0.8525236593059937,
+        "macro_f1": 0.7538761380052049,
+        "qwk": 0.9291468077837931,
+        "referable_auroc": 0.9810780713898754,
+        "referable_sensitivity": 0.8432432432432433
+      }
+    },
+    "e3_effb0_512_wce": {
+      "cpu_predict": {
+        "accuracy": 0.8430599369085173,
+        "macro_f1": 0.7577922848748516,
+        "qwk": 0.924272178012006,
+        "referable_auroc": 0.98092156744718,
+        "referable_sensitivity": 0.918918918918919
+      },
+      "differing_images": [
+        {
+          "cpu": 2,
+          "gpu": 3,
+          "image_id": "tr006840",
+          "true": 2
+        },
+        {
+          "cpu": 1,
+          "gpu": 0,
+          "image_id": "tr006850",
+          "true": 0
+        }
+      ],
+      "max_abs_prob_difference": 0.02383546192933289,
+      "n": 1268,
+      "pred_grade_differs": 2,
+      "training_time_gpu": {
+        "accuracy": 0.8430599369085173,
+        "macro_f1": 0.7570363775388154,
+        "qwk": 0.9243498569349538,
+        "referable_auroc": 0.9809035092999457,
+        "referable_sensitivity": 0.918918918918919
+      }
+    }
+  },
+  "written_utc": "2026-10-20T21:52:39+00:00"
+}

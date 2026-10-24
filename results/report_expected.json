@@ -1,0 +1,580 @@
+[
+ {
+  "name": "audit.images",
+  "label": "Images in MMRDR-CFP",
+  "value": 11118,
+  "decimals": 0
+ },
+ {
+  "name": "audit.train",
+  "label": "Official training images",
+  "value": 8893,
+  "decimals": 0
+ },
+ {
+  "name": "audit.test",
+  "label": "Official test images",
+  "value": 2225,
+  "decimals": 0
+ },
+ {
+  "name": "audit.grade0_share",
+  "label": "Grade 0 share (%)",
+  "value": 59,
+  "decimals": 0,
+  "scale": 100
+ },
+ {
+  "name": "audit.imbalance_ratio",
+  "label": "Largest / smallest training class",
+  "value": 10.4,
+  "decimals": 1
+ },
+ {
+  "name": "audit.resolutions",
+  "label": "Distinct image resolutions",
+  "value": 1857,
+  "decimals": 0
+ },
+ {
+  "name": "audit.repeat_groups",
+  "label": "Repeat-capture groups",
+  "value": 148,
+  "decimals": 0
+ },
+ {
+  "name": "split.test_with_train_copy",
+  "label": "Test images with a copy in train",
+  "value": 50,
+  "decimals": 0
+ },
+ {
+  "name": "audit.grade1_beyond_ma_test",
+  "label": "Grade 1 test images with another lesion flag",
+  "value": 116,
+  "decimals": 0
+ },
+ {
+  "name": "audit.grade1_test",
+  "label": "Grade 1 test images",
+  "value": 259,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.grey_n",
+  "label": "Grey-background test images",
+  "value": 63,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.grey_referable_share",
+  "label": "Grey-background images referable (%)",
+  "value": 63,
+  "decimals": 0,
+  "scale": 100
+ },
+ {
+  "name": "test.referable_share",
+  "label": "All test images referable (%)",
+  "value": 29,
+  "decimals": 0,
+  "scale": 100
+ },
+ {
+  "name": "split.val",
+  "label": "Validation images",
+  "value": 1268,
+  "decimals": 0
+ },
+ {
+  "name": "val.e1.accuracy",
+  "label": "Table 1 E1 accuracy",
+  "value": 0.827,
+  "decimals": 3
+ },
+ {
+  "name": "val.e1.macro_f1",
+  "label": "Table 1 E1 macro-F1",
+  "value": 0.73,
+  "decimals": 3
+ },
+ {
+  "name": "val.e1.qwk",
+  "label": "Table 1 E1 QWK",
+  "value": 0.918,
+  "decimals": 3
+ },
+ {
+  "name": "val.e1.referable_sensitivity",
+  "label": "Table 1 E1 referable sensitivity",
+  "value": 0.846,
+  "decimals": 3
+ },
+ {
+  "name": "val.e2.accuracy",
+  "label": "Table 1 E2 accuracy",
+  "value": 0.853,
+  "decimals": 3
+ },
+ {
+  "name": "val.e2.macro_f1",
+  "label": "Table 1 E2 macro-F1",
+  "value": 0.754,
+  "decimals": 3
+ },
+ {
+  "name": "val.e2.qwk",
+  "label": "Table 1 E2 QWK",
+  "value": 0.929,
+  "decimals": 3
+ },
+ {
+  "name": "val.e2.referable_sensitivity",
+  "label": "Table 1 E2 referable sensitivity",
+  "value": 0.843,
+  "decimals": 3
+ },
+ {
+  "name": "val.e3.accuracy",
+  "label": "Table 1 E3 accuracy",
+  "value": 0.843,
+  "decimals": 3
+ },
+ {
+  "name": "val.e3.macro_f1",
+  "label": "Table 1 E3 macro-F1",
+  "value": 0.757,
+  "decimals": 3
+ },
+ {
+  "name": "val.e3.qwk",
+  "label": "Table 1 E3 QWK",
+  "value": 0.924,
+  "decimals": 3
+ },
+ {
+  "name": "val.e3.referable_sensitivity",
+  "label": "Table 1 E3 referable sensitivity",
+  "value": 0.919,
+  "decimals": 3
+ },
+ {
+  "name": "test.m0.accuracy",
+  "label": "Table 2 M0 accuracy",
+  "value": 0.595,
+  "decimals": 3
+ },
+ {
+  "name": "test.m0.macro_f1",
+  "label": "Table 2 M0 macro-F1",
+  "value": 0.149,
+  "decimals": 3
+ },
+ {
+  "name": "test.m0.qwk",
+  "label": "Table 2 M0 QWK",
+  "value": 0.0,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.accuracy",
+  "label": "Table 2 E2 accuracy",
+  "value": 0.83,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.accuracy.low",
+  "label": "Table 2 E2 accuracy, lower",
+  "value": 0.813,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.accuracy.high",
+  "label": "Table 2 E2 accuracy, upper",
+  "value": 0.845,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.macro_f1",
+  "label": "Table 2 E2 macro-F1",
+  "value": 0.725,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.macro_f1.low",
+  "label": "Table 2 E2 macro-F1, lower",
+  "value": 0.697,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.macro_f1.high",
+  "label": "Table 2 E2 macro-F1, upper",
+  "value": 0.751,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.qwk",
+  "label": "Table 2 E2 QWK",
+  "value": 0.907,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.qwk.low",
+  "label": "Table 2 E2 QWK, lower",
+  "value": 0.894,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.qwk.high",
+  "label": "Table 2 E2 QWK, upper",
+  "value": 0.92,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.referable_sensitivity",
+  "label": "Table 2 E2 referable sensitivity",
+  "value": 0.793,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.referable_sensitivity.low",
+  "label": "Table 2 E2 referable sensitivity, lower",
+  "value": 0.762,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.referable_sensitivity.high",
+  "label": "Table 2 E2 referable sensitivity, upper",
+  "value": 0.823,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.referable_specificity",
+  "label": "Table 2 E2 referable specificity",
+  "value": 0.949,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.referable_auroc",
+  "label": "Table 2 E2 referable AUROC",
+  "value": 0.967,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.qwk_without_copies",
+  "label": "Table 2 E2 QWK without 50 copies",
+  "value": 0.906,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.accuracy",
+  "label": "Table 2 E3 accuracy",
+  "value": 0.822,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.accuracy.low",
+  "label": "Table 2 E3 accuracy, lower",
+  "value": 0.806,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.accuracy.high",
+  "label": "Table 2 E3 accuracy, upper",
+  "value": 0.837,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.macro_f1",
+  "label": "Table 2 E3 macro-F1",
+  "value": 0.709,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.macro_f1.low",
+  "label": "Table 2 E3 macro-F1, lower",
+  "value": 0.683,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.macro_f1.high",
+  "label": "Table 2 E3 macro-F1, upper",
+  "value": 0.732,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.qwk",
+  "label": "Table 2 E3 QWK",
+  "value": 0.907,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.qwk.low",
+  "label": "Table 2 E3 QWK, lower",
+  "value": 0.893,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.qwk.high",
+  "label": "Table 2 E3 QWK, upper",
+  "value": 0.919,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.referable_sensitivity",
+  "label": "Table 2 E3 referable sensitivity",
+  "value": 0.865,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.referable_sensitivity.low",
+  "label": "Table 2 E3 referable sensitivity, lower",
+  "value": 0.838,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.referable_sensitivity.high",
+  "label": "Table 2 E3 referable sensitivity, upper",
+  "value": 0.891,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.referable_specificity",
+  "label": "Table 2 E3 referable specificity",
+  "value": 0.927,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.referable_auroc",
+  "label": "Table 2 E3 referable AUROC",
+  "value": 0.968,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.qwk_without_copies",
+  "label": "Table 2 E3 QWK without 50 copies",
+  "value": 0.906,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.val_to_test_qwk_drop",
+  "label": "E2 validation-to-test QWK drop",
+  "value": 0.022,
+  "decimals": 3
+ },
+ {
+  "name": "test.e3.val_to_test_qwk_drop",
+  "label": "E3 validation-to-test QWK drop",
+  "value": 0.018,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.copies_qwk_change",
+  "label": "QWK change without copies",
+  "value": 0.001,
+  "decimals": 3
+ },
+ {
+  "name": "test.e2.off_by_two_or_more",
+  "label": "Two or more grades out (%)",
+  "value": 2.7,
+  "decimals": 1,
+  "scale": 100
+ },
+ {
+  "name": "test.e2.referable_misses",
+  "label": "Referable images graded 0 or 1",
+  "value": 133,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.referable_images",
+  "label": "Referable test images",
+  "value": 643,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.referable_miss_rate",
+  "label": "Referable miss rate (%)",
+  "value": 20.7,
+  "decimals": 1,
+  "scale": 100
+ },
+ {
+  "name": "test.e2.referable_called_grade1",
+  "label": "Referable misses graded 1",
+  "value": 113,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.pdr_graded_2_or_below",
+  "label": "Proliferative images graded 2 or below",
+  "value": 15,
+  "decimals": 0
+ },
+ {
+  "name": "test.e2.grade1_f1",
+  "label": "Grade 1 F1",
+  "value": 0.52,
+  "decimals": 2
+ },
+ {
+  "name": "test.e3.grade3_recall",
+  "label": "E3 grade 3 recall",
+  "value": 0.81,
+  "decimals": 2
+ },
+ {
+  "name": "test.e2.grade3_recall",
+  "label": "E2 grade 3 recall",
+  "value": 0.61,
+  "decimals": 2
+ },
+ {
+  "name": "test.e2.grey_accuracy",
+  "label": "Grey-background accuracy",
+  "value": 0.65,
+  "decimals": 2
+ },
+ {
+  "name": "test.e2.grey_accuracy_from_grade_mix",
+  "label": "Grey-background accuracy predicted by grade mix",
+  "value": 0.65,
+  "decimals": 2
+ },
+ {
+  "name": "cal.e2.temperature",
+  "label": "Temperature T",
+  "value": 2.26,
+  "decimals": 2
+ },
+ {
+  "name": "cal.e2.test_ece_before",
+  "label": "Test ECE before scaling",
+  "value": 0.103,
+  "decimals": 3
+ },
+ {
+  "name": "cal.e2.test_ece_after",
+  "label": "Test ECE after scaling",
+  "value": 0.023,
+  "decimals": 3
+ },
+ {
+  "name": "ref.primary.misses_caught",
+  "label": "20% rule: referable misses caught",
+  "value": 79,
+  "decimals": 0
+ },
+ {
+  "name": "ref.primary.share_caught",
+  "label": "20% rule: share of misses caught (%)",
+  "value": 59,
+  "decimals": 0,
+  "scale": 100
+ },
+ {
+  "name": "ref.secondary.referred",
+  "label": "Second rule: share referred on test (%)",
+  "value": 36,
+  "decimals": 0,
+  "scale": 100
+ },
+ {
+  "name": "ref.secondary.retained_miss_rate",
+  "label": "Second rule: retained miss rate on test (%)",
+  "value": 7.9,
+  "decimals": 1,
+  "scale": 100
+ },
+ {
+  "name": "ref.matched.sensitivity",
+  "label": "Matched threshold: E2 test sensitivity",
+  "value": 0.885,
+  "decimals": 3
+ },
+ {
+  "name": "ref.matched.specificity",
+  "label": "Matched threshold: E2 test specificity",
+  "value": 0.926,
+  "decimals": 3
+ },
+ {
+  "name": "xai.randomisation.classifier",
+  "label": "Randomisation: classifier re-initialised",
+  "value": -0.2,
+  "decimals": 2
+ },
+ {
+  "name": "xai.randomisation.all_layers",
+  "label": "Randomisation: all layers",
+  "value": 0.07,
+  "decimals": 2
+ },
+ {
+  "name": "xai.randomisation.unrelated",
+  "label": "Randomisation: unrelated images",
+  "value": 0.1,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.salient",
+  "label": "Deletion 5%: salient",
+  "value": 0.17,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.rotated",
+  "label": "Deletion 5%: rotated",
+  "value": 0.06,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.random",
+  "label": "Deletion 5%: random",
+  "value": 0.01,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.gap_grades1to3.min",
+  "label": "Deletion 5%: smallest gap, grades 1-3",
+  "value": 0.26,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.gap_grades1to3.max",
+  "label": "Deletion 5%: largest gap, grades 1-3",
+  "value": 0.46,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.grade0.salient",
+  "label": "Deletion 5%: grade 0, salient",
+  "value": 0.07,
+  "decimals": 2
+ },
+ {
+  "name": "xai.deletion5.grade0.rotated",
+  "label": "Deletion 5%: grade 0, rotated",
+  "value": 0.07,
+  "decimals": 2
+ },
+ {
+  "name": "xai.disc_ratio",
+  "label": "Optic disc proxy: attention / area",
+  "value": 3.7,
+  "decimals": 1
+ },
+ {
+  "name": "xai.lesion_tests",
+  "label": "Lesion comparisons within grade",
+  "value": 39,
+  "decimals": 0
+ },
+ {
+  "name": "xai.lesion_tests_significant_bh",
+  "label": "Lesion comparisons significant after correction",
+  "value": 0,
+  "decimals": 0
+ }
+]
